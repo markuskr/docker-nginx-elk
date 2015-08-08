@@ -23,7 +23,6 @@ RUN pip install elasticsearch elasticsearch-curator
 
 ADD elasticsearch.yml /log/elasticsearch-1.6.0/config/elasticsearch.yml
 ADD logstash.conf /home/kibana/logstash.conf
-ADD pattern /home/kibana/patterns/nginx.grok
 ADD GeoLiteCity.dat /home/kibana/GeoLiteCity.dat
 
 ADD start.sh start.sh
